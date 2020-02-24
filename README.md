@@ -1,6 +1,7 @@
 # technical_challenge
-This program has been designed to generate semi-automated responses to help center emails.\n
-The user need to type the name of the person who will recieve the email and the name of the person who is signing the email.\n
+Semi-automated email generator
+This program has been designed to generate semi-automated responses to help center emails.
+The user need to type the name of the person who will recieve the email and the name of the person who is signing the email.
     It allows any name, it will write the first letter of the name in capital letters
 Then the program offers three different options for a stimated time frame for answering the email.
     If the user doesn't want to manually select an option or make a mistake when selecting the program will automatically salect a time frame
