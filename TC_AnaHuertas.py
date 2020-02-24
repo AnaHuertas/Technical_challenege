@@ -24,7 +24,7 @@ a=timestimation[j]
 a+='.'
 os.system('cls')
 print('This is the final step.\nYou need to select the standard email that you want to use. You´ll be offered 3 different options.\n')
-for i in range(3):
+for i in range(len(message)):
     print("Option ",i+1)
     print(message[i][0],reciever,message[i][1],a,message[i][2])
     print(sender)
