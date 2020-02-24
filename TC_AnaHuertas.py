@@ -1,6 +1,6 @@
 import random #so random values can be generated
 import os #so the screen can be clean
-import ctypes
+import pyperclip
 #not operative import pyperclip #so the email can be copied in the clipboard
 timestimation=['before the next working day','in the next few hours','during today']#declare the list where the posible options for time are contained
 #declare the array with the standard emails sections
@@ -39,6 +39,7 @@ os.system('cls')
 print('Use the folowing text for your email:\n\n')
 print(message[k][0],reciever,message[k][1],a,message[k][2])
 print(sender)
-fin=("Please manually copy the text")
-#pyperclip.copy(str(message[k][0],reciever,message[k][1],timestimation[j],message[k][2],sender))
-#fin=input("The email has been copied in the clipboard")
+le=message[k][0]+' '+reciever+message[k][1]+a+message[k][2]+'\n'+sender
+#chain='a'
+pyperclip.copy(le)
+fin=input("The email has been copied on the clipboard")
