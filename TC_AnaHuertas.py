@@ -1,7 +1,6 @@
 import random #so random values can be generated
 import os #so the screen can be clean
-import pyperclip
-#not operative import pyperclip #so the email can be copied in the clipboard
+import pyperclip #so the email can be copied in the clipboard
 timestimation=['before the next working day','in the next few hours','during today']#declare the list where the posible options for time are contained
 #declare the array with the standard emails sections
 message=[['Hello','\n\nThank you for reaching out. We recieved your message and will do our best to get back to you','\nIf you need help immediately, please call us, or see if our Help Center could be helpfull.\n\nHave a beautiful evening!\n\nRegards,'],
@@ -36,10 +35,8 @@ else:
     print('The time frame will be randomly seleted.')
     k=random.randint(0,2)
 os.system('cls')
-print('Use the folowing text for your email:\n\n')
 print(message[k][0],reciever,message[k][1],a,message[k][2])
 print(sender)
 le=message[k][0]+' '+reciever+message[k][1]+a+message[k][2]+'\n'+sender
-#chain='a'
 pyperclip.copy(le)
 fin=input("The email has been copied on the clipboard")
