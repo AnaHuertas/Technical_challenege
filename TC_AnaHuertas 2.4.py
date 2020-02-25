@@ -1,6 +1,7 @@
 #with string interpolation!!!!!!!!!
 import os
 import random
+import paperclip
 reciever = 'Maggie'
 sender = 'Gloria'
 timeframelist=['before the next working day','in the next few hours','during today']#declare the list where the posible options for time are contained
@@ -13,7 +14,7 @@ else:
     print('The time frame will be randomly seleted.')
     j=random.randint(0,2)
 timeframe=timeframelist[j]
-emailarray = [['Hello ','! we will answer ',' This is '],
+emailarray = [['Hello','we will answer','This is'],
     ['lala','lele','lili'],
     ['mama','meme','mimi']]
 os.system('cls')
@@ -30,6 +31,9 @@ else:
     print('The time frame will be randomly seleted.')
     k=random.randint(0,2)
 email=emailarray[k]
+os.system('cls')
 print(f'{email[0]} {reciever},\n\n{email[1]} {timeframe}.\n\n{email[2]}\n{sender}')
-print(f'Hello {reciever}! we will answer {timeframe} This is {sender}')
-print(f'{email[0]}{reciever}{email[1]}{timeframe}{email[2]}{sender}')
+pyperclip.copy(f'{email[0]} {reciever},\n\n{email[1]} {timeframe}.\n\n{email[2]}\n{sender}')
+fin=input("The email has been copied on the clipboard")
+#print(f'Hello {reciever}! we will answer {timeframe} This is {sender}')
+#print(f'{email[0]}{reciever}{email[1]}{timeframe}{email[2]}{sender}')
