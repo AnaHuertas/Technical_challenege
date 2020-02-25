@@ -1,6 +1,4 @@
 #with string interpolation
-#is it cloned?
-print('Changing stuff')
 import os
 import random
 import pyperclip
