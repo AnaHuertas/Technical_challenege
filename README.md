@@ -1,5 +1,5 @@
 # technical_challenge
-## Semi-automated email generator
+## Semi-automated email generator using string interpolation
 ### This program has been designed to generate semi-automated responses to help center emails.
 ### The user need to type the name of the person who will recieve the email and the name of the person who is signing the email.
     It allows any name, it will write the first letter of the name in capital letters
