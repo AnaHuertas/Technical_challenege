@@ -1,4 +1,4 @@
-#with string interpolation!!!!!!!!!
+#with string interpolation
 import os
 import random
 import pyperclip
