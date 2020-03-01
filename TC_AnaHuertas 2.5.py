@@ -2,7 +2,6 @@
 import os
 import random
 import pyperclip
-import autopep8
 
 os.system('cls')  # this cleans the screen
 # in this case Maggie #it will write the first letter of the name in capital letter
